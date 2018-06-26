@@ -5,7 +5,7 @@ $jsonString = file_get_contents('php://input');
 $jsonObj = json_decode($jsonString);
 $message = $jsonObj->{"events"}[0]->{"message"}->{"text"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
-$return_message = $message . "じゃない♡";
+$return_message = $message;
 
 $messageData = [
     'type' => 'text',
