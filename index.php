@@ -1,6 +1,6 @@
 <?php
 
-$accessToken = 'EE0IU1xJpvjid+GHFQxZ5Hr/OGXXo+jH7fjpfQqeGCt7f8CJx4Q4xVmWRdXvGhul4SqIQZwSf138iAWoTyr4vdKu5ucbnQ1sxo9t1IiwOMfl5W9MjFw/W1IJgq8BGWLY6vRgRTWzinz8WGoVhZk1twdB04t89/1O/w1cDnyilFU=';
+$accessToken = 'アクセストークン';
 $jsonString = file_get_contents('php://input');
 $jsonObj = json_decode($jsonString);
 $message = $jsonObj->{"events"}[0]->{"message"}->{"text"};
